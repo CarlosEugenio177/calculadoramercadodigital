@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <title>Calculadora</title>
+</head>
+<body>  
+    <div class="box">
+        <div class="titulo">
+            <h1>BEM VINDO....</h1>
+            <h2 class="sub">Calcule seu custo ideal de acordo com a opção abaixo que mais se encaixa no seu lançamento ou perpétuo</h2>
+        </div>
+        <div class="container_box">
+            <div class="form-container">
+                <form id="leadCalculatorForm">
+                    <h1>Leads</h1>
+                    <p class="aviso">Atenção: apenas números nos campos</p>
+                    <label for="Ticketproduto">Ticketproduto:</label>
+                    <input type="number" id="Ticketproduto" name="Ticketproduto" required>
+    
+                    <label for="Leads">Total de Leads:</label>
+                    <input type="number" id="Leads" name="Leads" required>
+    
+                    <label for="Roas">Roas:</label>
+                    <input type="number" id="Roas" name="Roas" required>
+    
+                    <label for="VendasLancamento">Vendas de Lançamento:</label>
+                    <input type="number" id="VendasLancamento" name="VendasLancamento" required>
+    
+                    <button type="submit">Calcular</button>
+                </form>
+    
+                <div id="resultado" style="display: none;">
+                    <h2>Resultado:</h2>
+                    <p>Projeção de custo por Lead: <span id="custoPorLead"></span> R$</p>
+                </div>
+            </div>
+    
+            <div class="form-container">
+                <form id="criativoscalculadoraform">
+                    <h1 class="perp">Criativos para Perpétuo</h1>
+                    <p class="aviso">Atenção: apenas números nos campos</p>
+                    <label for="TicketprodutoPerpetuo">Ticketproduto:</label>
+                    <input type="number" id="TicketprodutoPerpetuo" name="Ticketproduto" required>
+    
+                    <label for="CPAPerpetuo">CPA desejado:</label>
+                    <input type="number" id="CPAPerpetuo" name="CPA" required>
+    
+                    <label for="InvestimentoPerpetuo">Investimento:</label>
+                    <input type="number" id="InvestimentoPerpetuo" name="Investimento" required>
+    
+                    <button type="submit">Calcular</button>
+                </form>
+                <div id="resultado1" style="display: none;">
+                    <h2>Resultado:</h2>
+                    <p>Projeção de Perpétuo: <span id="projecaoPerpetuo"></span> R$</p>
+                    <p>Quantidades de Conjutos/Criativos: <span id="QuantidadesConjutos"></span></p>
+                </div>
+            </div>
+    
+            <div class="form-container">
+                <form id="CalculadoraDistribuicaoForm">
+                    <h1>Distribuição</h1>
+                    <p class="aviso">Atenção: apenas números nos campos</p>
+                    <label for="Alcance">Alcance da conta:</label>
+                    <input type="number" id="Alcance" name="Alcance" required>
+    
+                    <label for="CPMDistribuicao">CPM de distribuição:</label>
+                    <input type="number" id="CPMDistribuicao" name="CPMDistribuicao" required>
+    
+                    <label for="frequenciaDesejada">Frequência desejada:</label>
+                    <input type="number" id="frequenciaDesejada" name="frequenciaDesejada" required>
+    
+                    <button type="submit">Calcular</button>
+                </form>
+                <div id="resultado2" style="display: none;">
+                    <h2>Resultado:</h2>
+                    <p>Projeção de Distribuição: <span id="projecaoDistribuicao"></span> R$</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/index.js"></script>
+
+
+</body>
+
+
+</html>
