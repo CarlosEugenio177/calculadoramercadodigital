@@ -17,21 +17,21 @@
             <h2 class="sub">Calcule seu custo ideal de acordo com a opção abaixo que mais se encaixa no seu lançamento ou perpétuo</h2>
         </div>
         <div class="container_box">
-            <div class="form-container">
+            <section class="form-container_1">
                 <form id="leadCalculatorForm">
                     <h1>Leads</h1>
                     <p class="aviso">Atenção: apenas números nos campos</p>
                     <label for="Ticketproduto">Ticketproduto:</label>
-                    <input type="number" id="Ticketproduto" name="Ticketproduto" required>
+                    <input type="number" id="Ticketproduto" name="Ticketproduto" step="0.01" required>
     
                     <label for="Leads">Total de Leads:</label>
-                    <input type="number" id="Leads" name="Leads" required>
+                    <input type="number" id="Leads" name="Leads" step="0.01" required>
     
                     <label for="Roas">Roas:</label>
-                    <input type="number" id="Roas" name="Roas" required>
+                    <input type="number" id="Roas" name="Roas" step="0.01" required>
     
                     <label for="VendasLancamento">Vendas de Lançamento:</label>
-                    <input type="number" id="VendasLancamento" name="VendasLancamento" required>
+                    <input type="number" id="VendasLancamento" name="VendasLancamento" step="0.01" required>
     
                     <button type="submit">Calcular</button>
                 </form>
@@ -40,20 +40,20 @@
                     <h2>Resultado:</h2>
                     <p>Projeção de custo por Lead: <span id="custoPorLead"></span> R$</p>
                 </div>
-            </div>
+            </section>
     
-            <div class="form-container">
+            <section class="form-container_2">
                 <form id="criativoscalculadoraform">
                     <h1 class="perp">Criativos para Perpétuo</h1>
                     <p class="aviso">Atenção: apenas números nos campos</p>
                     <label for="TicketprodutoPerpetuo">Ticketproduto:</label>
-                    <input type="number" id="TicketprodutoPerpetuo" name="Ticketproduto" required>
+                    <input type="number" id="TicketprodutoPerpetuo" name="Ticketproduto" step="0.01" required>
     
                     <label for="CPAPerpetuo">CPA desejado:</label>
-                    <input type="number" id="CPAPerpetuo" name="CPA" required>
+                    <input type="number" id="CPAPerpetuo" name="CPA" step="0.01" required>
     
                     <label for="InvestimentoPerpetuo">Investimento:</label>
-                    <input type="number" id="InvestimentoPerpetuo" name="Investimento" required>
+                    <input type="number" id="InvestimentoPerpetuo" name="Investimento" step="0.01" required>
     
                     <button type="submit">Calcular</button>
                 </form>
@@ -62,20 +62,20 @@
                     <p>Projeção de Perpétuo: <span id="projecaoPerpetuo"></span> R$</p>
                     <p>Quantidades de Conjutos/Criativos: <span id="QuantidadesConjutos"></span></p>
                 </div>
-            </div>
+            </section>
     
-            <div class="form-container">
+            <section class="form-container_3">
                 <form id="CalculadoraDistribuicaoForm">
                     <h1>Distribuição</h1>
                     <p class="aviso">Atenção: apenas números nos campos</p>
                     <label for="Alcance">Alcance da conta:</label>
-                    <input type="number" id="Alcance" name="Alcance" required>
+                    <input type="number" id="Alcance" name="Alcance" step="0.01" required>
     
                     <label for="CPMDistribuicao">CPM de distribuição:</label>
-                    <input type="number" id="CPMDistribuicao" name="CPMDistribuicao" required>
+                    <input type="number" id="CPMDistribuicao" name="CPMDistribuicao" step="0.01" required>
     
                     <label for="frequenciaDesejada">Frequência desejada:</label>
-                    <input type="number" id="frequenciaDesejada" name="frequenciaDesejada" required>
+                    <input type="number" id="frequenciaDesejada" name="frequenciaDesejada" step="0.01" required>
     
                     <button type="submit">Calcular</button>
                 </form>
@@ -83,14 +83,9 @@
                     <h2>Resultado:</h2>
                     <p>Projeção de Distribuição: <span id="projecaoDistribuicao"></span> R$</p>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
-
     <script src="/js/index.js"></script>
-
-
 </body>
-
-
 </html>
